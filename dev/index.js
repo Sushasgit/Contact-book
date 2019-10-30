@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TestPage from './TestPage';
+import App from './App';
 import './index.scss';
 
 ReactDOM.render(
-    <TestPage />,
+    <App />,
     document.getElementById('app'),
 );

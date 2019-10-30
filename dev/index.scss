@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
-
+:root {
+    --gradient-color-blue: #485173;
+    --gradient-color-darkBlue: #24283e;
+  }
+  
 * {
     box-sizing: border-box;
 }
 
 body {
     font: 16px 'Roboto', sans-serif;
+    margin: 0;
 }

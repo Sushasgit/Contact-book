@@ -1,8 +1,0 @@
-.idea
-/node_modules
-
-# production
-/prod
-
-# misc
-.DS_Store

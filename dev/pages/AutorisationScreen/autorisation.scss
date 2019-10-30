@@ -1,0 +1,45 @@
+:root {
+    --gradient-color-blue: #485173;
+    --gradient-color-darkBlue: #24283e;
+  }
+
+.switchButtons {
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(48, 54, 80, 0.2);
+    color: #10b1df;
+    font-size: 24px;
+    background-color: transparent;
+}
+
+.authScreen {
+    background-image: linear-gradient(to top, var(--gradient-color-blue) 0%, var(--gradient-color-darkBlue) 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonBox {
+    display: flex;
+    width: 100%;
+
+    button {
+        width: 50%;
+        padding: 10px;
+    }
+}
+
+.formBox {
+    background-color: #ffffff;
+    min-height: 300px;
+    min-width: 300px;
+    box-shadow: 0 0 10px rgba(48, 54, 80, 0.2);
+    border-radius: 3px;
+}
+
+.active {
+    background-color: #10b1df;
+    color: #ffffff;
+    border-color:  #10b1df;
+}

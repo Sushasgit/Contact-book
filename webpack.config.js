@@ -9,18 +9,19 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'prod'),
     filename: 'bundle.js',
+    // publicPath: '/',
   },
   watch: NODE_ENV === 'development',
   devtool: NODE_ENV === 'development' && 'eval-source-map',
   mode: NODE_ENV,
   module: {
     rules: [
-      {
-        test: /\.js/,
-        enforce: 'pre',
-        exclude: /node_modules/,
-        loader: 'eslint-loader',
-      },
+      // {
+      //   test: /\.js/,
+      //   enforce: 'pre',
+      //   exclude: /node_modules/,
+      //   loader: 'eslint-loader',
+      // },
       {
         test: /\.js/,
         exclude: /node_modules/,
@@ -59,11 +60,14 @@ module.exports = {
       },
     ],
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   plugins: [
-    new HtmlWebPackPlugin({
-      template: 'index.html',
-      filename: 'index.html',
-    }),
+    // new HtmlWebPackPlugin({
+    //   template: 'index.html',
+    //   filename: 'index.html',
+    // }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[name].css',

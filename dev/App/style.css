@@ -1,0 +1,24 @@
+.gridBox {
+    display: grid;
+    grid-template-columns: 490px auto;
+    grid-template-areas: "sidebar header header header"
+                        "sidebar content content content"
+                        "sidebar content content content"
+}
+
+.header {
+    grid-area: header;
+    min-height: 76px;
+    box-shadow: 0 0 10px rgba(48, 54, 80, 0.2);
+    background-color: #ffffff;
+}
+
+.content {
+    grid-area: content;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    /* max-width: 330px; */
+    background-image: linear-gradient(to top, #485173 0%, #24283e 100%);
+}
