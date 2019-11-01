@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import styles from './style.scss';
 
 const Home = (props) => {
-    console.log(props)
+    // console.log(props)
     return (
         <div className={styles.gridContainer}>
             <header className={styles.header}>

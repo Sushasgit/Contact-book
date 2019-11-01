@@ -20,14 +20,14 @@ import '../index.scss';
 class App extends React.Component {
   render() {
     return (
-    //   <Provider store={store}>
+      <Provider store={store}>
         <Router history={history}>
             <div>
             <Route exact path="/" component={Home} />
             {/* <Route path="/book" component={Book} /> */}
           </div>
         </Router>
-    // </Provider>
+     </Provider>
     );
   }
 }

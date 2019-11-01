@@ -9,7 +9,6 @@
     height: 100vh;
   }
 
-  /* Give every child element its grid name */
   .header {
     grid-area: header;
     background-color: #648ca6;
@@ -29,3 +28,8 @@
     grid-area: footer;
     background-color: #648ca6;
   }
+
+  // .header {
+  //   text-align: center;
+  //   color: red;
+  // }
